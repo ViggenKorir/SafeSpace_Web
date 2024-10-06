@@ -2,6 +2,7 @@ import { useState } from 'react'
 import React from 'react';
 import LandingPage from './components/LandingPage'
 import NavBar from './components/NavBar'
+import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
   const featuresData = [
@@ -53,6 +54,7 @@ const App = () => {
         bannerTitle="Join Our Supportive Community Today"
         bannerText="Take the first step towards better mental health. Sign up now and connect with others who understand."
       />
+      <Analytics />
     </>
   );
 }
